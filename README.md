@@ -6,10 +6,11 @@ This repo offers trained models and evaluation code for the [FastDepth](http://f
 
 ## Contents
 0. [Requirements](#requirements)
-0. [Trained Models](#trained-models)
+0. [Dataset](#dataset)
+0. [Training](#training)
+0. [Resume from a particular checkpoint](#resume-from-a-particular-checkpoint)
 0. [Evaluation](#evaluation)
-0. [Deployment](#deployment)
-0. [Results](#results)
+0. [Inference](#inference)
 
 ## Requirements
 - Install CUDA 11.7.0
@@ -40,9 +41,9 @@ To train the MobileNetSkipAdd architecture:
 resume - resume training from a particular checkpoint
 
 To resume from a particular checkpoint use the following command:
-     ```bash
+```bash
      python main.py --resume results/kitti.samples=0.modality=rgb.arch=MobileNetSkipAdd.decoder=nnconv.criterion=l1.lr=0.01.bs=8.pretrained=True/checkpoint-8.pth.tar
-     ```
+```
      
 ##Evaluation
 evaluation - start the evaluation process 
